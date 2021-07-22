@@ -11,6 +11,11 @@ export default {
 </script>
 
 <style>
+#app {
+  width: 400px;
+  margin: 0 auto;
+}
+
 body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -33,6 +38,7 @@ button {
   border-radius: 0;
   background-color: #bbadff;
   margin-bottom: 4px;
+  margin-top: 24px;
 }
 
 button:hover {

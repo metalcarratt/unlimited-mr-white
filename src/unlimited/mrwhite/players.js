@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import game from './game.js';
 import data from './data.js';
+import names from './data/names.js';
 
 Vue.use(Vuex)
 
@@ -13,9 +14,9 @@ const store = new Vuex.Store({
 
 const activePlayers = () => store.state.players.filter(player => !player.eliminated);
 
-let randomNames = [
-    'Strawberry', 'Tesla', 'Barbie', 'Anderson', 'Bond', 'Scarlet'
-]
+// let randomNames = [
+//     'Strawberry', 'Tesla', 'Barbie', 'Anderson', 'Bond', 'Scarlet'
+// ]
 
 export default {
     players: () => activePlayers(),
@@ -35,13 +36,15 @@ export default {
     },
 
     addPlayer() {
-        const r = Math.floor(Math.random() * randomNames.length);
-        const name = randomNames[r];
-        randomNames.splice(r, 1);
+        const person = names.getRandomName();
+        // const r = Math.floor(Math.random() * randomNames.length);
+        // const name = randomNames[r];
+        // randomNames.splice(r, 1);
         // window.console.log(name);
         // window.console.log(randomNames);
         store.state.players.push({
-            name,
+            name: person.name,
+            profile: person.image,
             score: 0,
             eliminated: false
         });

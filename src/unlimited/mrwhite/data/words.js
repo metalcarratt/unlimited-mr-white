@@ -1,7 +1,9 @@
 const words = [
     ['bread', 'toast'],
     ['apple', 'pineapple'],
-    ['pencil', 'pen']
+    ['pencil', 'pen'],
+    ['cheese', 'milk'],
+    ['stinky cheese', 'socks']
 ];
 
 export default {
