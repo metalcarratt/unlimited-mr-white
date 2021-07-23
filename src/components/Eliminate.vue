@@ -2,9 +2,14 @@
     <div>
         <h2>Eliminate</h2>
         <p>Choose who to eliminate:</p>
-        <span v-for="(player, pIter) of players" :key="pIter" @click="eliminatePlayer(player)" class="clickme">
-            <Profile  :player="player" />
-        </span>
+        <Profile
+            v-for="(player, pIter) of players"
+            :key="pIter"    
+            :hoverable="true"
+            :player="player"
+            @click.native="eliminatePlayer(player)"
+        />
+
     </div>
 </template>
 
@@ -25,9 +30,3 @@ export default {
     }
 }
 </script>
-
-<style scoped>
-.clickme {
-    cursor: pointer;
-}
-</style>

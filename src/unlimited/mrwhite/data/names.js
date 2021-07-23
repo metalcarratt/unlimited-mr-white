@@ -4,14 +4,15 @@ const IMG_NEO = "/profiles/neo.jpg";
 const IMG_BOND = "/profiles/bond.jpg";
 const IMG_STRAWBERRY = "/profiles/strawberry.png";
 const IMG_SCARLET = "/profiles/scarlet.png";
+const IMG_ELON = "/profiles/elon.png";
 
 const names = [
     ['Strawberry', IMG_STRAWBERRY],
-    ['Tesla', IMG_WOMAN],
+    ['Elon', IMG_ELON],
     ['Barbie', IMG_WOMAN],
     ['Neo', IMG_NEO],
     ['Bond', IMG_BOND],
-    ['Scarlet', IMG_SCARLET]
+    ['Scarlet', IMG_SCARLET],
 ]
 
 export default {
