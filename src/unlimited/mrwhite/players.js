@@ -57,14 +57,29 @@ export default {
     },
     
     assignRoles() {
-        const numberOfImposters = this.numberOfPlayers() > 4 ? 2 : 1;
+        let numberOfImposters;
+        let hasMrWhite;
+        if (this.numberOfPlayers() == 3) {
+            numberOfImposters = 1;
+            hasMrWhite = false;
+        } else if (this.numberOfPlayers() == 4 || this.numberOfPlayers() == 5) {
+            numberOfImposters = 1;
+            hasMrWhite = true;
+        } else {
+            numberOfImposters = 2;
+            hasMrWhite = true;
+        }
 
         store.state.players.forEach(player => player.role = undefined);
 
-        this.assignRole(data.MR_WHITE);
+        if (hasMrWhite) {
+            this.assignRole(data.MR_WHITE);
+        }
+
         for (let i = 0; i < numberOfImposters; i++) {
             this.assignRole(data.IMPOSTER);
         }
+
         store.state.players.forEach(player => {
             if (!player.role) {
                 player.role = data.CIVILIAN;
