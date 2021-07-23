@@ -16,6 +16,12 @@ export default {
   margin: 0 auto;
 }
 
+@media (max-width: 400px) {
+  #app {
+    width: 100%;
+  }
+}
+
 body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
