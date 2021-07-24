@@ -3,7 +3,30 @@ const words = [
     ['apple', 'pineapple'],
     ['pencil', 'pen'],
     ['cheese', 'milk'],
-    ['stinky cheese', 'socks']
+    ['stinky cheese', 'socks'],
+    ['pizza', 'hamburger'],
+    ['sausage', 'salami'],
+    ['zoo', 'farm'],
+    ['paper', 'cardboard'],
+    ['rose', 'lily'],
+    ['helicopter', 'drone'],
+    ['cake', 'bread'],
+    ['jam', 'butter'],
+    ['sunset', 'sunrise'],
+    ['banana', 'mango'],
+    ['tablet', 'ipad'],
+    ['ribbon', 'string'],
+    ['chrome', 'firefox'],
+    ['instagram', 'snapchat'],
+    ['chess', 'checkers'],
+    ['yoghurt', 'cream'],
+    ['milk', 'cheese'],
+    ['fridge', 'freezer'],
+    ['dress', 'skirt'],
+    ['Rome', 'Athens'],
+    ['baseball', 'cricket'],
+    ['mango', 'orange'],
+    ['cream', 'milk']
 ];
 
 export default {
