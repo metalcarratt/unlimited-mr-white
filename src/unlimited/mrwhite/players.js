@@ -108,19 +108,27 @@ export default {
     },
 
     citizenPointsUp() {
-        this.citizens().forEach(player => player.score = player.score + 1);
+        this.citizens().forEach(player => player.score = player.score + 2);
     },
 
     badGuys() {
         return store.state.players.filter(player => !player.eliminated && player.role !== data.CIVILIAN);
     },
 
+    mrWhite() {
+        return store.state.players.filter(player => player.role === data.MR_WHITE);
+    },
+
+    imposters() {
+        return store.state.players.filter(player => player.role === data.IMPOSTER);
+    },
+
     badGuysPointsUp() {
-        this.badGuys().forEach(player => player.score = player.score + 1);
+        this.imposters().forEach(player => player.score = player.score + 6);
+        this.mrWhite().forEach(player => player.score = player.score + 10);
     },
 
     mrWhitePointsUp() {
-        const mrWhite = store.state.players.filter(player => player.role === data.MR_WHITE);
-        mrWhite.score = mrWhite.score + 1;
+        this.smrWhite().forEach(player => player.score = player.score + 10);
     }
 }

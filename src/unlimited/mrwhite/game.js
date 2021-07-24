@@ -71,7 +71,7 @@ export default {
         store.state.eliminatedPlayer.eliminated = true;
         // console.log(`elimnated ${store.state.eliminatedPlayer.name}`);
         store.state.eliminatedPlayer = {};
-        if (players.citizens().length === 0) {
+        if (players.citizens().length <= 1) {
             // console.log("no citizens left");
             players.badGuysPointsUp();
             store.state.winner = "Imposters and Mr White";
