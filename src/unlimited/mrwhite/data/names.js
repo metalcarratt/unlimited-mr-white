@@ -1,10 +1,10 @@
-// const IMG_MAN = "/profiles/generic_male.jpg";
-const IMG_WOMAN = "/profiles/generic_woman.png";
-const IMG_NEO = "/profiles/neo.jpg";
-const IMG_BOND = "/profiles/bond.jpg";
-const IMG_STRAWBERRY = "/profiles/strawberry.png";
-const IMG_SCARLET = "/profiles/scarlet.png";
-const IMG_ELON = "/profiles/elon.png";
+// const IMG_MAN = "profiles/generic_male.jpg";
+const IMG_WOMAN = "profiles/generic_woman.png";
+const IMG_NEO = "profiles/neo.jpg";
+const IMG_BOND = "profiles/bond.jpg";
+const IMG_STRAWBERRY = "profiles/strawberry.png";
+const IMG_SCARLET = "profiles/scarlet.png";
+const IMG_ELON = "profiles/elon.png";
 
 const names = [
     ['Strawberry', IMG_STRAWBERRY],
