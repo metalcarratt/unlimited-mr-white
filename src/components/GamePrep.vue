@@ -1,7 +1,6 @@
 <template>
     <div class="page">
-        <h1>Unlimited Mr White</h1>
-        <h2>New Game</h2>
+        <h2>Choose Players</h2>
         <p>
             <span>Players: {{ players.length }}</span>
             <button class="mini" @click="removePlayer">-</button>
@@ -17,6 +16,7 @@
 
 <script>
 import players from '@/unlimited/mrwhite/players.js';
+import stage from '@/unlimited/mrwhite/stage.js';
 
 export default {
     computed: {
@@ -38,7 +38,7 @@ export default {
             players.removePlayer();
         },
         start() {
-            this.$router.push('/play');
+            stage.nextStage();
         }
     }
 }

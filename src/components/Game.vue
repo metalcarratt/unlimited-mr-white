@@ -2,7 +2,8 @@
     <div class="page">
         <h1>Unlimited Mr White</h1>
 
-        <SeeWords v-if="stage.isSeeWords()" />
+        <GamePrep v-if="stage.isChoosePlayers()" />
+        <SeeWords v-else-if="stage.isSeeWords()" />
         <TellClues v-else-if="stage.isTellClues()" />
         <End v-else-if="stage.isEnd()" />
         <RoundOver v-else-if="stage.isRoundOver()" />
@@ -13,13 +14,14 @@
 import game from '@/unlimited/mrwhite/game.js';
 import stage from '@/unlimited/mrwhite/stage.js';
 
+import GamePrep from './GamePrep.vue';
 import SeeWords from './SeeWords.vue';
 import TellClues from './TellClues.vue';
 import End from './End.vue';
 import RoundOver from './RoundOver.vue';
 
 export default {
-    components: { SeeWords, TellClues, End, RoundOver },
+    components: { GamePrep, SeeWords, TellClues, End, RoundOver },
     mounted() {
         game.startGame();
     },

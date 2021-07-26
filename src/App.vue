@@ -63,6 +63,7 @@ button.mini {
   height: 30px;
   padding: 4px;
   margin-left: 4px;
+  margin-top: 0;
 }
 
 fieldset {

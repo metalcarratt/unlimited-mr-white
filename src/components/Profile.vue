@@ -17,6 +17,7 @@ div {
     box-sizing: border-box;
     display: inline-block;
     width: 100%;
+    height: 180px;
     background-color: white;
     margin-bottom: 8px;
     margin-right: 8px;
@@ -53,14 +54,16 @@ span.showScore {
 }
 
 img {
-    width: 120px;
+    max-width: 120px;
+    max-height: 160px;
     padding: 8px;
     display: inline-block;
     vertical-align: middle;
 }
 
 div.shrink img {
-    width: 80px;
+    max-width: 80px;
+    max-height: 100px;
 }
 
 label {
