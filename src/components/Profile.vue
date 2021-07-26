@@ -16,24 +16,22 @@ export default {
 div {
     box-sizing: border-box;
     display: inline-block;
-    border: 1px solid black;
-    width: 150px;
+    width: 100%;
     background-color: white;
     margin-bottom: 8px;
     margin-right: 8px;
-    padding-top: 8px;
-    height: 250px;
     vertical-align: top;
-    border-radius: 8px;
-    box-shadow: 4px 4px 8px #000;
+    border-left: 16px solid #6ca8b7;
+    padding-left: 30px;
+    text-align: left;
 }
 
-div.hoverable:hover {
+/* div.hoverable:hover {
     cursor: pointer;
     margin-top: 4px;
     display: inline-block;
     box-shadow: 0px 0px 8px #000;
-}
+} */
 
 div.selected {
     border: 6px solid yellow;
@@ -49,9 +47,20 @@ span.score {
 
 span.showScore {
     font-size: 22px;
+    
 }
 
 img {
     width: 120px;
+    padding: 8px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+label {
+    display: inline-block;
+    font-size: 30px;
+    margin-left: 20px;
+    vertical-align: middle;
 }
 </style>

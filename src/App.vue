@@ -27,28 +27,34 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  background-color: #2c3e50;
-  color: #ccc;
+  background-color: #f2f9fc;
+  color: #5e6869;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-  border-bottom: 4px solid #ccc;
-  padding-bottom: 4px;
+    border-bottom: 1px solid #146467;
+    padding-bottom: 4px;
+    background-color: white;
+    margin-top: 0;
+    padding-top: 12px;
+    margin-bottom: 0;
 }
 
 button {
   width: 100%;
   font-size: 20px;
   height: 50px;
-  border: 1px solid #ccc;
+  border: 1px solid #8ac7cd;
   border-radius: 0;
-  background-color: #bbadff;
+  background-color: #bdfcff;
   margin-bottom: 4px;
   margin-top: 24px;
 }
 
 button:hover {
-  background-color: #8f84c4;
+  background-color: #a3dddf;
   cursor: pointer;
 }
 

@@ -1,18 +1,14 @@
 <template>
     <div>
-        <h2>See Words - {{ currentPlayerName }}</h2>
-
         <Profile  :player="currentPlayer" />
 
-        <div class="hiddenBox" v-if="hidden">
-            <span>HIDDEN</span>
-        </div>
-        <div class="revealedBox" v-else>
-            <span>{{ revealedWord }}</span>
-        </div>
+        <p v-if="hidden">{{ currentPlayer.name }}, tap the card below to reveal your hidden word:</p>
+        <p v-else>Click 'Next player' once you've read the word and pass the device to the next player.</p>
+
+        <Card :hidden="hidden" :word="revealedWord" @click.native="reveal" />
                 
-        <button @click="reveal" v-if="hidden">See Word</button>
-        <button @click="next" v-else>Next player</button>
+        <!-- <button @click="reveal" v-if="hidden">See Word</button> -->
+        <button @click="next" v-if="!hidden">Next player</button>
     </div>
 </template>
 
@@ -20,9 +16,10 @@
 import Profile from './Profile.vue';
 import players from '@/unlimited/mrwhite/players.js';
 import game from '@/unlimited/mrwhite/game.js';
+import Card from './Card.vue';
 
 export default {
-    components: { Profile },
+    components: { Profile, Card },
     data() {
         return {
             hidden: true
@@ -51,31 +48,3 @@ export default {
 }
 </script>
 
-<style>
-.hiddenBox {
-  width: 250px;
-  height: 100px;
-  margin: 0 auto;
-  background-color: black;
-  border: 4px solid white;
-}
-
-.hiddenBox span {
-  margin-top: 40px;
-  display: block;
-}
-
-.revealedBox {
-  width: 250px;
-  height: 100px;
-  margin: 0 auto;
-  background-color: white;
-  border: 4px solid black;
-  color: black;
-}
-
-.revealedBox span {
-  margin-top: 40px;
-  display: block;
-}
-</style>
