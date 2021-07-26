@@ -3,9 +3,9 @@
         <h2>Round Over</h2>
         <p>Winner is {{ winner }}</p>
         <p>Scores:</p>
-        <ul>
-            <Profile v-for="(player, pIndex) of players" :key="pIndex" :player="player" showScore="true" />
-        </ul>
+        <div class="list">
+            <Profile v-for="(player, pIndex) of players" :key="pIndex" :player="player" showScore="true" :shrink="true" />
+        </div>
         <button @click="playAgain">Play again</button>
     </div>
 </template>

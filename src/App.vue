@@ -79,4 +79,8 @@ input[type="text"] {
   font-size: 20px;
   padding: 4px;
 }
+
+.list {
+    text-align: left;
+}
 </style>

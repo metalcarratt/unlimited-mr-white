@@ -1,5 +1,5 @@
 <template>
-    <div :class="[active ? 'selected' : '', hoverable ? 'hoverable' : '']">
+    <div :class="[active ? 'selected' : '', hoverable ? 'hoverable' : '', shrink ? 'shrink' : '']">
         <img :src="player.profile" />
         <label>{{ player.name }}</label>
         <span v-if="showScore" class="showScore">Score: <span class="score">{{ player.score }}</span></span>
@@ -8,7 +8,7 @@
 
 <script>
 export default {
-    props: [ "player", "active", "showScore", "hoverable" ]
+    props: [ "player", "active", "showScore", "hoverable", "shrink" ]
 }
 </script>
 
@@ -26,15 +26,17 @@ div {
     text-align: left;
 }
 
-/* div.hoverable:hover {
+div.shrink {
+    width: calc(50% - 8px);
+    height: 180px;
+}
+
+div.hoverable:hover {
     cursor: pointer;
-    margin-top: 4px;
-    display: inline-block;
-    box-shadow: 0px 0px 8px #000;
-} */
+}
 
 div.selected {
-    border: 6px solid yellow;
+    border-left: 16px solid yellow;
 }
 
 label, span {
@@ -57,10 +59,20 @@ img {
     vertical-align: middle;
 }
 
+div.shrink img {
+    width: 80px;
+}
+
 label {
     display: inline-block;
     font-size: 30px;
     margin-left: 20px;
     vertical-align: middle;
+}
+
+div.shrink label {
+    font-size: 22px;
+    margin-left: 0;
+    display: block;
 }
 </style>

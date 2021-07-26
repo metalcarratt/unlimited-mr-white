@@ -4,7 +4,6 @@
 
         <SeeWords v-if="stage.isSeeWords()" />
         <TellClues v-else-if="stage.isTellClues()" />
-        <Eliminate v-else-if="stage.isEliminate()" />
         <End v-else-if="stage.isEnd()" />
         <RoundOver v-else-if="stage.isRoundOver()" />
     </div>
@@ -16,12 +15,11 @@ import stage from '@/unlimited/mrwhite/stage.js';
 
 import SeeWords from './SeeWords.vue';
 import TellClues from './TellClues.vue';
-import Eliminate from './Eliminate.vue';
 import End from './End.vue';
 import RoundOver from './RoundOver.vue';
 
 export default {
-    components: { SeeWords, TellClues, Eliminate, End, RoundOver },
+    components: { SeeWords, TellClues, End, RoundOver },
     mounted() {
         game.startGame();
     },

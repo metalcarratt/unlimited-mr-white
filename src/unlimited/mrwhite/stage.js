@@ -6,7 +6,6 @@ Vue.use(Vuex)
 
 const SEE_WORDS = "See Words";
 const TELL_CLUES = "Tell Clues";
-const ELIMINATE = "Eliminate";
 const END = "End";
 const ROUND_OVER = "Round Over";
 
@@ -19,7 +18,6 @@ const store = new Vuex.Store({
 export default {
     isSeeWords: () => store.state.stage === SEE_WORDS,
     isTellClues: () => store.state.stage === TELL_CLUES,
-    isEliminate: () => store.state.stage === ELIMINATE,
     isEnd: () => store.state.stage === END,
     isRoundOver: () => store.state.stage === ROUND_OVER,
 
@@ -34,8 +32,6 @@ export default {
             game.chooseRandomPlayer();
             store.state.stage = TELL_CLUES;
         } else if (this.isTellClues()) {
-            store.state.stage = ELIMINATE;
-        } else if (this.isEliminate()) {
             store.state.stage = END;
         }
         // window.console.log(`stage set to ${store.state.stage}`);
