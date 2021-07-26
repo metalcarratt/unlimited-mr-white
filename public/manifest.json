@@ -1,0 +1,15 @@
+{
+    "name": "Unlimited Mr. White",
+    "short_name": "Mr White",
+    "start_url": "index.html",
+    "display": "standalone",
+    "theme_color": "#0476F2",
+    "background_color": "#fff",
+    "icons": [
+      {
+        "src": "icon/white.png", 
+        "sizes": "144x144", 
+        "type": "PNG" 
+      }
+    ]
+  }
