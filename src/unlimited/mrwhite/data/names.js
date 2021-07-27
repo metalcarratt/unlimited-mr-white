@@ -12,7 +12,14 @@ const names = [
     ['Bond', IMG_BOND],
     ['Scarlet', IMG_SCARLET],
     ['Jack', 'profiles/jack.PNG'],
-    ['Carmen', 'profiles/carmen.PNG']
+    ['Carmen', 'profiles/carmen.PNG'],
+    ['Dora', 'profiles/dora.PNG'],
+    ['Elsa', 'profiles/elsa.PNG'],
+    ['Olaf', 'profiles/olaf.PNG'],
+    ['BluTack Man', 'profiles/blutackman.PNG'],
+    ['Diona', 'profiles/diona.PNG'],
+    ['Po', 'profiles/po.PNG'],
+    ['Sylveon', 'profiles/sylveon.PNG']
 ]
 
 export default {

@@ -26,7 +26,11 @@ const words = [
     ['Rome', 'Athens'],
     ['baseball', 'cricket'],
     ['mango', 'orange'],
-    ['cream', 'milk']
+    ['cream', 'milk'],
+    ['volleyball','netball'],
+    // ['animal','pokemon'],
+    ['coin','note']
+
 ];
 
 export default {
