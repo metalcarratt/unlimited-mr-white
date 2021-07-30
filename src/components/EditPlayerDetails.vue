@@ -70,6 +70,11 @@ export default {
     width: calc(100% - 20px);
 }
 
+.imageList {
+    overflow: scroll;
+    height: calc(100% - 210px);
+}
+
 .modal img {
     max-width: 60px;
     max-height: 60px;
