@@ -29,8 +29,20 @@ const words = [
     ['cream', 'milk'],
     ['volleyball','netball'],
     // ['animal','pokemon'],
-    ['coin','note']
-
+    ['coin','note'],
+    // ['unlimited mr white','undercover'],
+    ['peanuts', 'cashew nuts'],
+    ['ostrich', 'emu'],
+    ['dolphin', 'orca'],
+    ['rifle', 'pistol'],
+    ['guitar', 'ukelele'],
+    ['violin', 'cello'],
+    ['piano', 'keyboard'],
+    ['TV', 'computer'],
+    ['onion', 'garlic'],
+    ['church', 'temple'],
+    ['mouse', 'hamster'],
+    ['cross stitch', 'sewing']
 ];
 
 export default {
