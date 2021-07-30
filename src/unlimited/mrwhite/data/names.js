@@ -20,16 +20,23 @@ const names = [
     ['Diona', 'profiles/diona.PNG'],
     ['Po', 'profiles/po.PNG'],
     ['Sylveon', 'profiles/sylveon.PNG']
-]
+];
+
+const unchosenNames = names.map((name, index) => index);
 
 export default {
     getRandomName() {
-        const r = Math.floor(Math.random() * names.length);
-        const name = names[r];
-        names.splice(r, 1);
+        const r = Math.floor(Math.random() * unchosenNames.length);
+        const i = unchosenNames[r];
+        const name = names[i];
+        unchosenNames.splice(i, 1);
         return {
             name: name[0],
             image: name[1]
         }
+    },
+
+    getAllImages() {
+        return names.map(name => name[1]);
     }
 }

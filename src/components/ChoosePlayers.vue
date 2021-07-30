@@ -69,6 +69,7 @@ export default {
         closeEditPlayer(updatedPlayer) {
             this.showPlayerEdit = false;
             this.selectedPlayer.name = updatedPlayer.name;
+            this.selectedPlayer.profile = updatedPlayer.selectedImage;
         }
     }
 }
