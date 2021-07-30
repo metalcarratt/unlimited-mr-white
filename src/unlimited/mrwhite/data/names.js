@@ -19,7 +19,11 @@ const names = [
     ['BluTack Man', 'profiles/blutackman.PNG'],
     ['Diona', 'profiles/diona.PNG'],
     ['Po', 'profiles/po.PNG'],
-    ['Sylveon', 'profiles/sylveon.PNG']
+    ['Sylveon', 'profiles/sylveon.PNG'],
+    ['Sentret', 'profiles/sentret.PNG'],
+    ['Qiqi', 'profiles/qiqi.PNG'],
+    ['Hinata', 'profiles/hinata.PNG'],
+    ['Doge', 'profiles/doge.PNG']
 ];
 
 const unchosenNames = names.map((name, index) => index);
