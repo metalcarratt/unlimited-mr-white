@@ -89,4 +89,6 @@ input[type="text"] {
 .list {
     text-align: left;
 }
+
+
 </style>
