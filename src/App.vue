@@ -20,6 +20,11 @@ export default {
   #app {
     width: 100%;
   }
+
+  h1 + div {
+    padding: 4px;
+    box-sizing: border-box;
+  }
 }
 
 body {

@@ -13,8 +13,8 @@ export default {
 
 <style scoped>
 div {
-    width: 150px;
-    height: 225px;
+    width: 130px;
+    height: 200px;
     margin: 0 auto;
     border-radius: 16px;
     box-shadow: 4px 4px 8px #999;

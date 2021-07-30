@@ -17,7 +17,7 @@ div {
     box-sizing: border-box;
     display: inline-block;
     width: 100%;
-    height: 180px;
+    height: 140px;
     background-color: white;
     margin-bottom: 8px;
     margin-right: 8px;
@@ -29,7 +29,7 @@ div {
 
 div.shrink {
     width: calc(50% - 8px);
-    height: 180px;
+    height: 140px;
 }
 
 div.hoverable:hover {
@@ -49,21 +49,21 @@ span.score {
 }
 
 span.showScore {
-    font-size: 22px;
+    font-size: 18px;
     
 }
 
 img {
-    max-width: 120px;
-    max-height: 160px;
+    max-width: 90px;
+    max-height: 120px;
     padding: 8px;
     display: inline-block;
     vertical-align: middle;
 }
 
 div.shrink img {
-    max-width: 80px;
-    max-height: 100px;
+    max-width: 60px;
+    max-height: 80px;
 }
 
 label {
@@ -74,7 +74,7 @@ label {
 }
 
 div.shrink label {
-    font-size: 22px;
+    font-size: 18px;
     margin-left: 0;
     display: block;
 }
